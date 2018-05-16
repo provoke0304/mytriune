@@ -1,0 +1,3 @@
+INSERT INTO triune_job_request_transaction_bam_status_history VALUES (43, '196', 'N', 'jtsy', '::1', '2018-05-15 09:21:42');
+INSERT INTO triune_job_request_transaction_bam_status_history VALUES (43, '207', 'N', 'jtsy', '::1', '2018-05-15 10:06:12');
+INSERT INTO triune_job_request_transaction_bam_status_history VALUES (44, '208', 'N', 'jtsy', '::1', '2018-05-15 11:14:47');

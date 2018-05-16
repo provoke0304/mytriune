@@ -77,6 +77,21 @@ $route['insertRequestBAM'] = 'triuneData/insertRequestBAM';
 $route['uploadFile'] = 'triuneFile/uploadFile'; 
 
 
+$route['ictjrs/create']= 'triuneJRS/ICTCreateRequest';
+$route['ictjrs/getCreateConfirmation'] = 'triuneJRS/ICTCreateRequestConfirmation';
+$route['ictjrs/getCreatedRequest'] = 'triuneJRS/ICTCreatedRequest';
+$route['ictjrs/getMyRequestList'] = 'triuneJRS/ICTMyRequestList';
+$route['ictjrs/getNewRequestList'] = 'triuneJRS/ICTNewRequestList';
+$route['ictjrs/getNewRequestVerification'] = 'triuneJRS/ICTNewRequestVerification';
+
+$route['getjobClassification'] = 'triuneData/getjobClassification';
+$route['getICTJRSMyRequestList'] = 'triuneData/getICTJRSMyRequestList'; 
+$route['getICTJRSRequestList'] = 'triuneData/getICTJRSRequestList'; 
+
+$route['setRequestICT'] = 'triuneData/setRequestICT'; 
+$route['insertRequestICT'] = 'triuneData/insertRequestICT';
+$route['uploadICTFile'] = 'triuneICTFile/uploadICTFile';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 

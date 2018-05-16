@@ -11,7 +11,7 @@ class triuneAuth extends MY_Controller {
 	 * Since this controller is set as the default controller in
 	 * config/routes.php, it's displayed at http://tua.edu.ph/triune
 	 *
-	 * AUTHOR: Randy D. Lagdaan
+	 * AUTHOR: Johann Phillip D. Balauro
 	 * DESCRIPTION: Authentication Controller. Included login, registration, reset password, create token
 	 * DATE CREATED: March 12, 2018
      * DATE UPDATED: March 14, 2018
@@ -229,7 +229,7 @@ class triuneAuth extends MY_Controller {
  
                     //echo $message; //send this in email
 					
-					$this->_sendMail($toEmail ="dcisleta@tua.edu.ph", $subject = "For Verification", $message);
+					$this->_sendMail($toEmail ="johannphillipdbalauro@tua.edu.ph", $subject = "For Verification", $message);
 
 				} else {
 					$this->session->set_flashdata('msg', "The personal information you've typed do not matched with your current records!");

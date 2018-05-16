@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class triuneFile extends MY_Controller {
+class triuneICTFile extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -26,7 +26,7 @@ class triuneFile extends MY_Controller {
 
 
 
-	public function uploadFile() {
+	public function uploadICTFile() {
 		$ID = $_POST["ID"];
 		$userName = $this->_getUserName(1);
 		$insertData = null;
@@ -35,7 +35,7 @@ class triuneFile extends MY_Controller {
 		sleep(3);
 		if($_FILES["files"]["name"] != '') {
 			$output = '';
-			$config["upload_path"] = './assets/uploads/bamjrs/';
+			$config["upload_path"] = './assets/uploads/ictjrs/';
 	  		$config["allowed_types"] = 'gif|jpg|png|pdf|jpeg';
 	  		$this->load->library('upload', $config);
 	  		$this->upload->initialize($config);
@@ -52,7 +52,7 @@ class triuneFile extends MY_Controller {
 					$data = $this->upload->data();
 					$output .= '
 					<div class="col-md-3">
-					<img src="'.base_url().'assets/uploads/bamjrs/'.$data["file_name"].'" class="img-responsive img-thumbnail" />
+					<img src="'.base_url().'assets/uploads/ictjrs/'.$data["file_name"].'" class="img-responsive img-thumbnail" />
 					</div>
 					';
 				}
@@ -63,7 +63,7 @@ class triuneFile extends MY_Controller {
 					'workstationID' => $workstationID,
 					'timeStamp' => $timeStamp,
 				);				 
-				$this->_insertRecords($tableName = 'triune_job_request_transaction_bam_attachments', $insertData);        			 
+				$this->_insertRecords($tableName = 'triune_job_request_transaction_ict_attachments', $insertData);        			 
 					
 
 			
